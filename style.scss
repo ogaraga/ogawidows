@@ -213,7 +213,7 @@ header{
     .navbar-items{
         margin: auto;
         font-variant: small-caps;
-      
+        z-index: 250;
            
         ul{
             @include mydefinition();
@@ -222,6 +222,7 @@ header{
                 margin: auto;
                 background-color: $mybg;
                 height: auto;
+                z-index: 250;
 
 
             }
