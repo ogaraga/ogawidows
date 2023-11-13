@@ -222,7 +222,6 @@ header {
   .container .navbar-items ul {
     display: none;
     margin: auto;
-    background-color: gray;
     height: auto;
     z-index: 250;
   }
