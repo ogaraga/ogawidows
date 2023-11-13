@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: visible;
+    max-width: 100vw;
+    max-height: auto;
+    @media screen and (max-width: 500px) {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    @media screen and (max-width: 800px) {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    @media screen and (max-width: 1200px) {
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+}
+:root{
+    --mywhite:white;
+    --mybg:rgba(100, 70, 80, 0.7);
+    --myfont:20px;
+    --mymargin: auto 20px;
+}
+@mixin myexplain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: var(--mybg);   
+}
+.main-container{
+    max-width: 100%;
+    max-height: auto;
+    margin: var(--mymargin);
+    padding: 20px;
+    .first-div{
+    h1{
+        text-align: center;
+        font-size: var(--myfont);
+        color: var(--mywhite);
+    }
+    #myp1{
+        text-align: justify;
+        text-indent: 40px;
+        margin-top: 20px;
+        line-height: 1.5;
+        font-size: var(--myfont);
+    }
+}
+    .second-div{
+        max-width: 100%;
+        height: 100%;
+        margin-top: 20px;
+        h2{
+            text-align: center;
+            font-size: var(--myfont);
+            color: var(--mywhite);
+        }
+        #myp{
+            text-align: justify;
+            text-indent: 40px;
+            margin-top: 20px;
+            line-height: 1.5;
+            font-size: var(--myfont);
+        }
+        ul{
+            @include myexplain();
+            background: var(--mybg);
+            border-radius: 10px;
+            width: 30%;
+            margin: auto;
+            height: auto;
+            gap: 10px;
+            color: var(--mywhite);
+            flex-direction: row;
+            flex-wrap: wrap;
+            font-size: var(--myfont);
+            list-style: none;
+            animation: ul 8s linear infinite;
+            @media screen and (max-width:540px) {
+                padding: auto;
+                margin: auto;
+                width: 89%;
+            
+            }
+            @keyframes ul {
+                10%{
+                    color: white;
+                    transition-delay: 4s;
+                }
+                40%{
+                    color: crimson;
+                }
+                70%{
+                    color: black;
+                }
+                100%{
+                    color: aqua;
+                }
+            }
+            li{
+                padding: 10px;
+                color: white;
+                list-style: none;
+                margin: var(--mymargin);
+                font-variant: small-caps;
+                @media screen and (max-width: 540px) {
+                    margin: 5px 8px;
+                    width: 30%;
+    
+                }
+            }
+
+        }
+    }
+        .myp-div{
+            margin-top: 20px;
+            line-height: 1.5;
+            font-size: var(--myfont);
+            text-align: justify;
+            height: 100%;
+            width: 100%;
+            b{
+                text-transform: uppercase;
+                font-style: italic;
+                color: var(--mywhite);
+
+            }
+        }
+    
+
+    .vision-mission{
+        width: 100%;
+        margin-top: 50px;
+        height: auto;
+        line-height: 1.5;
+        font-size: var(--myfont);
+        h4{
+            text-align: center;
+            color: aliceblue;
+            font-variant: small-caps;
+            
+        }
+        h3{
+            color: aliceblue;
+            font-variant: small-caps;
+            margin-top: -5px;
+            
+        }
+        .px1{
+            text-align: justify;
+        }
+        
+
+        
+        #px{
+            font-size: var(--myfont);
+            margin: auto;
+            text-align: justify;
+
+        }
+
+    }
+
+}
+#myfooter{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 20px;
+    color: darkslategrey;
+    font-weight: bold;
+    background: whitesmoke;
+    max-width: 100vw;
+    height: 10vh;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+        p{
+            margin: auto 10px;
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="don.css">
+    <title>Donation page</title>
+</head>
+<body>
+    <div class="donate-container">
+        <div id="images">
+            <img src="/widows.jpg" alt="widows pics">
+            <img src="/school (2).jpg" alt="school kids">
+        </div>
+        <h1>Make a donation here<i class="fa-solid fa-arrow-up-long"></i><i class="fa-solid fa-arrow-down-long"></i></h1>
+        <p>Through you, widows and the less-privileged are waxing strong and doing those things
+        some unexpected natural limitations had imposed on them. 
+        You have changed the narative with your super gifts and selfless donations. Less than 5% of your donations are injected into administrative purposes. Thank you once again!</p>
+        <div class="donate-form">
+            <form action="" method="post">
+                    <button type="button" id="btn_one">One-time</button>
+                    <div id="one_time" class="one_time">
+                        <input type="button" name="1k" id="one-time" onclick="Fmoney('1,000')" value="1k once">
+                        <input type="button" name="2k" id="one-time" onclick="Fmoney('2,000')" value="2k once">
+                        <input type="button" name="3k" id="one-time" onclick="Fmoney('3,000')" value="3k once"><br>
+                        <input type="button" name="5k" id="one-time" onclick="Fmoney('5,000')" value="5k once">
+                        <input type="button" name="10k" id="one-time" onclick="Fmoney('10,000')" value="10k once">
+                        <input type="button" name="15k" id="one-time" onclick="Fmoney('15,000')" value="15k once"><br>
+                        <input type="text" name="Total" id="total_1"  placeholder="Total Amnt">
+                <br>    <select name="money-symbol" id="sim-1">
+                            <option id="naira" value="NGN">NGN|Nigerian Naira</option>
+                            <option id="dollar" value="USD">USD|US Dollar</option>
+                            <option id="pounds" value="GBP">GBP|British Pound</option>
+                            <option id="euro" value="EUR">EUR|Euro</option>
+                        </select>
+                    </div>
+                    
+                
+    
+                    <button type="button" id="btn_mon">Monthly</button>
+                    <div style="display: none;" id="_monthly">
+                        <input type="button" name="1k" id="monthly" onclick="Fcash('1,000')" value="1k mon">
+                        <input type="button" name="2k" id="monthly" onclick="Fcash('2,000')" value="2k mon">
+                        <input type="button" name="3k" id="monthly" onclick="Fcash('3,000')" value="3k mon"><br>
+                        <input type="button" name="5k" id="monthly" onclick="Fcash('5,000')" value="5k mon">
+                        <input type="button" name="10k" id="monthly" onclick="Fcash('10,000')" value="10k mon">
+                        <input type="button" name="15k" id="monthly"onclick="Fcash('15,000')" value="15k mon"><br>
+                        <input type="text" name="Total" id="total_2" placeholder="Total Amnt">
+                <br>    <select name="money-symbol" id="sim-2">
+                            <option id="naiara_2" value="NGN">NGN|Nigerian Naira</option>
+                            <option id="dollar_2" value="USD">USD|US Dollar</option>
+                            <option id="pounds_2" value="GBP">GBP|British Pound</option>
+                            <option id="euro_2" value="EUR">EUR|Euro</option>
+                        </select>
+                    </div>
+                <button type="button" id="next">Next</button>
+            </form>
+            <span id="validated"></span>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
