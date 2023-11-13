@@ -183,7 +183,7 @@ header {
     left: 46%;
     top: 20px;
     margin: auto;
-    z-index: 270;
+    z-index: 300;
   }
 }
 .container .toggle-bars #open-bar {
@@ -195,6 +195,12 @@ header {
   cursor: pointer;
   color: goldenrod;
 }
+@media screen and (max-width: 540px) {
+  .container .toggle-bars #open-bar {
+    display: none;
+    z-index: 300;
+  }
+}
 .container .toggle-bars #close-bar {
   color: crimson;
   font-weight: bold;
@@ -203,6 +209,7 @@ header {
 @media screen and (max-width: 540px) {
   .container .toggle-bars #close-bar {
     display: none;
+    z-index: 300;
   }
 }
 .container .toggle-bars #close-bar:hover {

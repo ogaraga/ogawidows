@@ -184,7 +184,7 @@ header{
             left: 46%;
             top: 20px;
             margin: auto;
-            z-index: 270;
+            z-index: 300;
 
 
         }
@@ -196,6 +196,10 @@ header{
                 cursor: pointer;
                 color: goldenrod;
             }
+            @media screen and (max-width:540px) {
+                display: none;
+                z-index: 300;
+            }
         }
         #close-bar{
             color: crimson;
@@ -203,6 +207,7 @@ header{
             font-size: 25px;
             @media screen and (max-width:540px) {
                 display: none;
+                z-index: 300;
             }
             &:hover{
                 cursor: pointer;
