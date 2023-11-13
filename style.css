@@ -212,6 +212,7 @@ header {
 .container .navbar-items {
   margin: auto;
   font-variant: small-caps;
+  z-index: 250;
 }
 .container .navbar-items ul {
   display: flex;
