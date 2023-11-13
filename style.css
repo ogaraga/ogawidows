@@ -183,7 +183,7 @@ header {
     left: 46%;
     top: 20px;
     margin: auto;
-    z-index: 200;
+    z-index: 270;
   }
 }
 .container .toggle-bars #open-bar {
