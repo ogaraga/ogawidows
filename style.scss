@@ -177,6 +177,7 @@ header{
         width: auto;
         height: auto;
         display: none;
+        z-index: 300;
         @media screen and (max-width:540px) {
             display: block;
             position: fixed;
@@ -184,7 +185,7 @@ header{
             left: 46%;
             top: 20px;
             margin: auto;
-            z-index: 300;
+           
 
 
         }
@@ -196,10 +197,7 @@ header{
                 cursor: pointer;
                 color: goldenrod;
             }
-            @media screen and (max-width:540px) {
-                display: none;
-                z-index: 300;
-            }
+           
         }
         #close-bar{
             color: crimson;
@@ -207,7 +205,7 @@ header{
             font-size: 25px;
             @media screen and (max-width:540px) {
                 display: none;
-                z-index: 300;
+                
             }
             &:hover{
                 cursor: pointer;
@@ -218,7 +216,7 @@ header{
     .navbar-items{
         margin: auto;
         font-variant: small-caps;
-        z-index: 250;
+        z-index: 200;
         
            
         ul{
@@ -227,7 +225,7 @@ header{
                 display: none;
                 margin: auto;
                 height: auto;
-                z-index: 250;
+                z-index: 200;
 
 
             }
