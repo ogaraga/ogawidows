@@ -6,13 +6,128 @@
 body{
     background-color: aliceblue;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    margin: auto;
+@media screen and (max-width: 600px) {
+    .heading{
+        width: 100vw;
+        margin: auto 0;
+        a{
+            position: absolute;
+            right: 1%;
+        }
+    }
+    width: 100vw;
+    overflow-x: hidden;
 }
-h1{
-    text-align: center;
-    text-transform: uppercase;
 }
-p{
+.heading{
+    background-color: gray;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        color: white;
+        position: absolute;
+        right:5%;
+        &:hover{
+            color: gold;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: aliceblue;
+        opacity: 0.7;
+        margin-left: 10px;
+    }
+    
+    
+}
+.crisis{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+    .vital{
+        width: 100%;
+        margin:10px;
+        h2{
+            text-transform: uppercase;
+            font-size: 15px;
+            color: blue;
+            text-align: center;
+        }
+        p{
+            font-size: 15px;
+            color: gray;
+        }
+    }
+    .process{
+        width: 100%;
+        h2{
+            text-transform: uppercase;
+            font-size: 15px;
+            color: blue;
+            text-align: center;
+        }
+        p{
+            font-size: 15px;
+            color: gray;
+        }
+        h3{
+            color: coral;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+        b{
+            font-size: 20px;
+        }
+    }
+    .types{
+        width: 100%;
+        h2{
+            text-transform: uppercase;
+            font-size: 15px;
+            color: blue;
+            text-align: center;
+        }
+        p{
+            font-size: 15px;
+            color: gray;
+        }
+        
+        b{
+            font-size: 20px;
+        }
+    }
+}
+#myfooter{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 17px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background: grey;
+    height: 10vh;
+    margin-top: 10px;
+    width: 100vw;
+    @media screen and (max-width: 600px) {
+        width: 100vw;
+        height: 10vh;
+        margin-bottom: 0;
+        p{
+            margin: 10px auto;
+        }
+    }
+    p{
+        margin: auto;
+    }
+    
 }

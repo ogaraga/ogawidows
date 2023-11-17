@@ -7,15 +7,131 @@
 body {
   background-color: aliceblue;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  margin: auto;
+}
+@media screen and (max-width: 600px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body .heading {
+    width: 100vw;
+    margin: auto 0;
+  }
+  body .heading a {
+    position: absolute;
+    right: 1%;
+  }
 }
 
-h1 {
+.heading {
+  background-color: gray;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading a {
+  color: white;
+  position: absolute;
+  right: 5%;
+}
+.heading a:hover {
+  color: gold;
+}
+.heading h1 {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: aliceblue;
+  opacity: 0.7;
+  margin-left: 10px;
+}
+
+.crisis {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 20px;
+}
+.crisis .vital {
+  width: 100%;
+  margin: 10px;
+}
+.crisis .vital h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: blue;
+  text-align: center;
+}
+.crisis .vital p {
+  font-size: 15px;
+  color: gray;
+}
+.crisis .process {
+  width: 100%;
+}
+.crisis .process h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: blue;
+  text-align: center;
+}
+.crisis .process p {
+  font-size: 15px;
+  color: gray;
+}
+.crisis .process h3 {
+  color: coral;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 10px;
+}
+.crisis .process b {
+  font-size: 20px;
+}
+.crisis .types {
+  width: 100%;
+}
+.crisis .types h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: blue;
+  text-align: center;
+}
+.crisis .types p {
+  font-size: 15px;
+  color: gray;
+}
+.crisis .types b {
+  font-size: 20px;
 }
 
-p {
+#myfooter {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  font-size: 17px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  background: grey;
+  height: 10vh;
+  margin-top: 10px;
+  width: 100vw;
+}
+@media screen and (max-width: 600px) {
+  #myfooter {
+    width: 100vw;
+    height: 10vh;
+    margin-bottom: 0;
+  }
+  #myfooter p {
+    margin: 10px auto;
+  }
+}
+#myfooter p {
+  margin: auto;
 }/*# sourceMappingURL=crisis.css.map */
