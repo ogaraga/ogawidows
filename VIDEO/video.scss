@@ -6,13 +6,106 @@
 body{
     background-color: aliceblue;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
+.gallery{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+ .heading{  
+    width: 100%;
+    height: auto;
+    background-color:grey;
+    margin: auto; 
+    padding-top: 5px;
 h1{
     text-align: center;
     text-transform: uppercase;
+    margin-top: 10px;
+    color: blue;
+    font-size: 20px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    opacity: 0.5;
 }
 p{
     text-align: center;
     font-size: 17px;
+    font-size: 18px;
+    margin: 10px auto;
+    color: white;
+    opacity: 0.8;
+}
+a{
+    text-decoration: underline;
+    font-size: 20px;
+    color: coral;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    &:hover{
+        color: blue;
+        transition: all 1s ease;
+    }
+}
+}
+.photo-video{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-top: 10px;
+
+.photo-gala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top:10px;
+    .photo{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-left:-20px;
+        img{
+            width: 500px;
+            height: 400px;
+            margin: 10px auto;
+        }
+        p{
+            text-align: justify;
+            font-size: 15px;
+            margin-top: -15px;
+        }
+    }
+}
+}
+}
+#myfooter{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    color: white;
+    font-weight: bold;
+    background: grey;
+    max-width: 100vw;
+    height: 15vh;
+    @media screen and (max-width: 540px) {
+        width: 100%;
+        height: 20vh;
+        margin-bottom: 0;
+        overflow: hidden;
+        p{
+            margin: 20px 10px;
+        }
+    }
+    p{
+        margin: 20px;
+    }
+
 }
