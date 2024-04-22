@@ -40,17 +40,42 @@ body {
   background-color: var(--mybg);
 }
 
+.magt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  background-color: var(--mybg);
+  max-width: 60%;
+  width: auto;
+  height: auto;
+  border-width: 5px;
+  border-style: ridge;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .magt h4 {
   text-transform: uppercase;
   margin-top: 5px;
   color: var(--mywhite);
   font-variant: small-caps;
-  text-align: center;
   font-size: var(--myfont);
 }
-.magt li {
+.magt ul {
+  text-align: justify;
+  margin: auto;
+  text-indent: 10px;
+}
+.magt ul li {
   font-size: var(--myfont);
   font-family: Verdana, monospace;
+  list-style-type: none;
+  text-align: start;
+  text-indent: 0px;
 }
 .magt b {
   color: aqua;
