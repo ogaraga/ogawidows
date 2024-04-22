@@ -37,6 +37,24 @@
 body{
     background-color: var(--mybg);   
 }
+.magt{
+    h4{
+        text-transform: uppercase;
+        margin-top: 5px;
+        color: var(--mywhite);
+        font-variant: small-caps;
+        text-align: center;
+        font-size: var(--myfont);
+    }
+    li{
+        font-size: var(--myfont);
+        font-family: Verdana, monospace;
+    }
+    b{
+        color: aqua;
+        opacity: 0.5;
+    }
+}
 .main-container{
     max-width: 100%;
     max-height: auto;
