@@ -159,6 +159,7 @@ body {
 .main-container .second-div ul li {
   padding: 10px;
   color: white;
+  text-align: justify;
   list-style: none;
   margin: var(--mymargin);
   font-variant: small-caps;
