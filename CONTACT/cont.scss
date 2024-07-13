@@ -40,8 +40,6 @@ body{
     width: 100vw;
 }
 #con-hom{
-    float: inline-end;
-    margin-top: -3%;
     text-decoration: none;
     text-transform: capitalize;
     color: aliceblue;
@@ -55,10 +53,12 @@ body{
     transition: all 1.8s;
 }
 .contact-form{
+    @include myexplain();
+    flex-direction: column;
     max-width:100%;
     height: auto;
-    width: 80%;
-    margin: 10px auto;
+    width: auto;
+    margin: 10px;
     h1{
         text-align: center;
         text-transform: uppercase;
@@ -69,11 +69,11 @@ body{
     p{
         font-size: 20px;
         line-height: 1.5;
-        text-align: justify;
+        text-align: center;
     }
 }
 .form-container{
-    background: linear-gradient(to bottom, var(--mybg), aliceblue, green,lightblue);
+    background: linear-gradient(to bottom, var(--mybg), aliceblue, lightblue);
     max-width: 100vw;
     width: 80%;
     height: 90%;
@@ -90,9 +90,9 @@ body{
    
 
     form{
-        background-color: rgba(0, 0, 0, 0.841);
-        width: 100%;
-        padding: 50px 100px;
+        background-color: gray;
+        width: fit-content;
+        padding: 50px;
         height: auto;
         @media screen and (max-width: 500px) {
             width: 100%;
