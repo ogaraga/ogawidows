@@ -88,6 +88,29 @@ body {
   margin: var(--mymargin);
   padding: 20px;
 }
+.main-container .first-div .founder {
+  float: left;
+  align-items: center;
+  margin: 5px;
+  position: relative;
+  width: auto;
+  padding: 10px;
+  height: auto;
+  width: auto;
+}
+.main-container .first-div .founder img {
+  width: 140px;
+  box-shadow: 2px 3px 3px 2px aliceblue, 2px 2px 4px 2px aqua;
+  padding: 10px;
+  border-radius: 20px;
+}
+.main-container .first-div .founder span {
+  transform: translate(9%, 15%);
+  position: absolute;
+  top: 3%;
+  color: white;
+  font-weight: bolder;
+}
 .main-container .first-div h1 {
   text-align: center;
   font-size: var(--myfont);

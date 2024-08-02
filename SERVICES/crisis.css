@@ -68,6 +68,19 @@ body {
   opacity: 0.7;
   font-weight: bold;
 }
+.crisis .vital .heads img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.crisis .vital .heads p {
+  height: 100px;
+  margin-left: 20px;
+}
+.crisis .vital .heads h3 {
+  font-size: 15px;
+}
 .crisis .vital h2 {
   text-transform: uppercase;
   font-size: 15px;
