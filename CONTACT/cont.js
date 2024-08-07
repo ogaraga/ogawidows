@@ -29,8 +29,8 @@ const container = document.getElementById("form__container");
         xhr.open("POST", "/");
         xhr.setRequestHeader("content-type", "application/json");
         xhr.onload = () => {
-          if (xhr.status === 200 && male.checked ||
-            female.checked ) {
+          if (xhr.status === 200 && (male.checked ||
+            female.checked )) {
             myForm.style.display = "none";
             container.innerText =
               "Your submission is well received. Thank you!";
