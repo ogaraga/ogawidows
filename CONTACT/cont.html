@@ -1,148 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cont.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cont.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>CONTACT US FORM</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Heading telling us about the form -->
 
-   <div class="contact-form heading">
-        <h1>contact us form</h1>
-        <a href="/index.html" id="con-hom">back to home page</a>
-        <p>Please kindly drop your message and we shall contact you as soon as we can: should we delay in our response due to work loads, please note that a state-designated officer in charge will definitely be in touch. Thank You!</p>
+    <div class="contact-form heading">
+      <h1>contact us form</h1>
+      <a href="/index.html" id="con-hom">back to home page</a>
+      <p>
+        Please kindly drop your message and we shall contact you as soon as we
+        can: should we delay in our response due to work loads, please note that
+        a state-designated officer in charge will definitely be in touch. Thank
+        You!
+      </p>
     </div>
-    
 
     <div class="form-container" id="form__container">
+      <!-- Form box/ wrapper -->
 
-        <!-- Form box/ wrapper -->
-
-        <form action="/index.html" method="post" id="form__wrapper">
-            <label for="prefix">Prefix</label><br>
-            <select  style="margin-bottom: 5px;" name="prefix" id="prefix" required>
-                <option disabled selected value="Select Your Status">Select Your Status</option>
-                <option   value = "Select Your Status">Mr</option>
-                <option   value = "Select Your Status">Mrs</option>
-                <option   value = "Select Your Status">Miss</option>
-                <option   value = "Select Your Status">Chief</option>
-                <option   value = "Select Your Status">Esq</option>
-                <option   value = "Select Your Status">Dr</option>
-                <option   value = "Select Your Status">Rev</option>
-                <option   value = "Select Your Status">Pst</option>
-                <option   value = "Select Your Status">Imam</option>
-                <option   value = "Select Your Status">Engr</option>
-                <option   value = "Select Your Status">Prof</option>
-            </select><br>
-            <!-- detail input/information -->
-            <label for="name"> Full Name</label><br>
-            <input type="text" name="full name" id="fullname" placeholder="Enter Your Name" required><br>
-            <label for="Email">Email</label><br>
-            <input type="text" name="email" id="email" placeholder="Enter Your email" required><br>
-            <label for="phone">Telephone</label><br>
-            <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone No" required><br>
-            <label for="Sex">Gender</label><br>
-            <input type="checkbox" name="male" id="male" required>
-            <label for="male">Male</label><br>
-            <input type="checkbox" name="female" id="female" required>
-            <label for="name">Female</label><br>
-            <label for="addr">Residential Address</label><br>
-            <input type="text" name="address" id="address" placeholder="Enter Your house Address" required><br>
-            <label for="contact time">Best time to reach you?</label><br>
-            <input type="time" name="time" id="time" required> <br>
-            <label for="name">Country</label><br>
-            <!-- Few selected countries -->
-            <select style="margin-bottom: 10px;" id="selected">
-                <option disabled selected value="country">Select Your Continent/Country</option>
-                <option value="country">Asia</option>
-                <option value="country">Benin Rep</option>
-                <option value="country">cameroon</option>
-                <option value="country">Cape Verde</option>
-                <option value="country">Columbia</option>
-                <option value="country">Central Africa</option>
-                <option value="country">East Africa</option>
-                <option value="country">Egypt</option>
-                <option value="country">Europe</option>
-                <option value="country">Faro Island</option>
-                <option value="country">Ghana</option>
-                <option value="country">Gabon</option>
-                <option value="country">Greece</option>
-                <option value="country">Gambia</option>
-                <option value="country">Comoros</option>
-                <option value="country">India</option>
-                <option value="country">Moroco</option>
-                <option value="country">Niger</option>
-                <option value="country">Nigeria</option>
-                <option value="country">North Africa</option>
-                <option value="country">North America</option>
-                <option value="country">Netherland</option>
-                <option value="country">Portigua</option>
-                <option value="country">South Africa</option>
-                <option value="country">South America</option>
-                <option value="country">Tunisia</option>
-                <option value="country">Togo</option>
-                <option value="country">Tanzania</option>
-                <option value="country">cameroon</option>
-                <option value="country">United Arab Emirates</option>
-                <option value="country">United States</option>
-                <option value="country">United Kingdom</option>
-                <option value="country">West Afria</option>
-                <option value="country">Others</option>
-            </select><br>
-            <!-- Message/comment for contacting us -->
-            <label for="Message" id="message">Drop Your message here 
-            <span style="color: coral; font-size: 23px;" class="fa-solid fa-down-long"></span>
-            </label> <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea><br>
-            <button type="reset" id="reset" >Reset</button>
-            <button type="submit" id="submit">Submit</button>
-        </form>
+      <form class="submited" method="post" id="form__wrapper">
+        <label for="prefix">Prefix</label><br />
+        <select style="margin-bottom: 5px" name="prefix" id="prefix" required>
+          <option disabled selected value="Select Your Status">
+            Select Your Status
+          </option>
+          <option value="Select Your Status">Mr</option>
+          <option value="Select Your Status">Mrs</option>
+          <option value="Select Your Status">Miss</option>
+          <option value="Select Your Status">Chief</option>
+          <option value="Select Your Status">Esq</option>
+          <option value="Select Your Status">Dr</option>
+          <option value="Select Your Status">Rev</option>
+          <option value="Select Your Status">Pst</option>
+          <option value="Select Your Status">Imam</option>
+          <option value="Select Your Status">Engr</option>
+          <option value="Select Your Status">Prof</option></select
+        ><br />
+        <!-- detail input/information -->
+        <label for="name"> Full Name</label><br />
+        <input
+          type="text"
+          name="full name"
+          id="fullname"
+          placeholder="Enter Your Name"
+          required
+        /><br />
+        <label for="Email">Email</label><br />
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter Your email"
+          required
+        /><br />
+        <label for="phone">Telephone</label><br />
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          placeholder="Enter Your Phone No"
+          required
+        /><br />
+        <label for="Sex">Gender</label><br />
+        <input type="checkbox" name="male" id="male"/>
+        <label for="male">Male</label><br />
+        <input type="checkbox" name="female" id="female"/>
+        <label for="name">Female</label><br />
+        <label for="addr">Residential Address</label><br />
+        <input
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Enter Your house Address"
+          required
+        /><br />
+        <label for="contact time">Best time to reach you?</label><br />
+        <input type="time" name="time" id="time" required /> <br />
+        <label for="name">Country</label><br />
+        <!-- Few selected countries -->
+        <select style="margin-bottom: 10px" id="selected">
+          <option disabled selected value="country">
+            Select Your Continent/Country
+          </option>
+          <option value="country">Asia</option>
+          <option value="country">Benin Rep</option>
+          <option value="country">cameroon</option>
+          <option value="country">Cape Verde</option>
+          <option value="country">Columbia</option>
+          <option value="country">Central Africa</option>
+          <option value="country">East Africa</option>
+          <option value="country">Egypt</option>
+          <option value="country">Europe</option>
+          <option value="country">Faro Island</option>
+          <option value="country">Ghana</option>
+          <option value="country">Gabon</option>
+          <option value="country">Greece</option>
+          <option value="country">Gambia</option>
+          <option value="country">Comoros</option>
+          <option value="country">India</option>
+          <option value="country">Moroco</option>
+          <option value="country">Niger</option>
+          <option value="country">Nigeria</option>
+          <option value="country">North Africa</option>
+          <option value="country">North America</option>
+          <option value="country">Netherland</option>
+          <option value="country">Portigua</option>
+          <option value="country">South Africa</option>
+          <option value="country">South America</option>
+          <option value="country">Tunisia</option>
+          <option value="country">Togo</option>
+          <option value="country">Tanzania</option>
+          <option value="country">cameroon</option>
+          <option value="country">United Arab Emirates</option>
+          <option value="country">United States</option>
+          <option value="country">United Kingdom</option>
+          <option value="country">West Afria</option>
+          <option value="country">Others</option></select
+        ><br />
+        <!-- Message/comment for contacting us -->
+        <label for="Message" id="message"
+          >Drop Your message here
+          <span
+            style="color: coral; font-size: 23px"
+            class="fa-solid fa-down-long"
+          ></span>
+        </label>
+        <br />
+        <textarea name="" id="messages" cols="30" rows="10"></textarea><br />
+        <button type="reset" id="reset">Reset</button>
+        <button type="submit" id="submit">Submit</button>
+      </form>
     </div>
     <!-- footer section -->
     <footer id="myfooter">
-        <p>The information, videos and images/photoes on this web are under international and local copyrights &copy;2023. Trespassers are hereby warned!</p>
+      <p>
+        The information, videos and images/photoes on this web are under
+        international and local copyrights &copy;2023. Trespassers are hereby
+        warned!
+      </p>
     </footer>
 
-    <!-- Javascrip code Area --> 
-   <script>
-    const container = document.getElementById("form__container")
-    const mySubmit = document.getElementById("submit");
-    const myName = document.getElementById("fullname").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
-    const time = document.getElementById("time").value;
-    const male = document.getElementById("male");
-    const female = document.getElementById("female");
-    const address = document.getElementById("address").value;
-    const mycomment = document.getElementById("message").value;
-    const country = document.getElementById("selected").value;
-    const statuz = document.getElementById("prefix").value;
-    const myForm = document.getElementById("form__wrapper");
-    mySubmit.onclick = ()=>{
-        if (male.checked || female.checked || myName == "text" && email && phone && 
-            time && address && mycomment && statuz && country) {
-            myForm.style.display = "none";
-            container.innerText = "Your submission is well received. Thank you!";
-            container.style.background = "white";
-            container.style.width = "50%";
-            container.style.padding = "20px";
-            container.style.color = "green";
-
-        }
-        else{
-            myForm.innerText = "oops! please, fill in all necessary blocks";
-            myForm.style.color = "red";
-            myForm.style.background = "white";
-            myForm.style.width = "100%";
-        }
-    }
-
-
-    </script>
-</body>
+    <script src="/CONTACT/cont.js"></script>
+  </body>
 </html>

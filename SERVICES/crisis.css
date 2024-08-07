@@ -11,10 +11,6 @@ body {
   margin: auto;
 }
 @media screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-    overflow-x: hidden;
-  }
   body .heading {
     width: 100vw;
     margin: auto 0;
@@ -23,10 +19,32 @@ body {
     position: absolute;
     right: 1%;
   }
+  body .crisis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100vw;
+    width: 100%;
+    margin: auto;
+  }
+  body .heading {
+    width: 100%;
+  }
+  body .vital {
+    margin: auto 10px;
+  }
+  body .process {
+    margin: auto 10px;
+  }
+  body .types {
+    margin: auto 10px;
+  }
 }
 
 .heading {
   background-color: gray;
+  max-width: 200vw;
   width: 100%;
   height: 10vh;
   display: flex;
@@ -51,14 +69,13 @@ body {
 }
 
 .crisis {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
-  gap: 20px;
+  gap: 10px;
 }
 .crisis .vital {
-  width: 100%;
+  width: auto;
   margin: 10px;
 }
 .crisis .vital .heads {
@@ -92,7 +109,7 @@ body {
   color: gray;
 }
 .crisis .process {
-  width: 100%;
+  width: auto;
 }
 .crisis .process h2 {
   text-transform: uppercase;
@@ -114,7 +131,7 @@ body {
   font-size: 20px;
 }
 .crisis .types {
-  width: 100%;
+  width: auto;
 }
 .crisis .types h2 {
   text-transform: uppercase;
