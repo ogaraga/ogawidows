@@ -12,6 +12,7 @@ app.get('/',(req, res)=>{
 });
 //post the form
 app.post('/', (req, res)=>{
+    try {        
     const myName = req.body.myName;
     const email = req.body.email;
     const phone = req.body.phone;
@@ -44,5 +45,9 @@ app.post('/', (req, res)=>{
             console.log('Mail was sent: '+ info.response)
         }
     })
+    
+    } catch (error) {
+        console.log(error.message)
+    }
 });
 app.listen(5500, ()=>console.log('Server running @ port 5500!'));
