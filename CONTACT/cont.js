@@ -30,7 +30,7 @@ mySubmit.addEventListener("submit", (e) => {
     xhr.open("POST", "/");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.onload = () => {
-        if ([xhr.status === 200 && male.checked] ||[xhr.status === 200 && female.checked]) {
+        if ([xhr.status === 200 && male.checked] ||[xhr.status === 200 && female.checked ]) {
             myForm.style.display = "none";
             container.innerHTML =
                 "Your submission is well received. Thank you!";
