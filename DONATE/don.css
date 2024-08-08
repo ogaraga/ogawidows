@@ -28,7 +28,7 @@ body {
   }
 }
 
-.donation {
+.donations {
   text-align: center;
   color: white;
   margin: 10px auto;
@@ -37,6 +37,7 @@ body {
   letter-spacing: 5px;
   width: auto;
   height: auto;
+  padding: 10px;
 }
 
 .donate-container {
