@@ -25,11 +25,12 @@ mySubmit.addEventListener("submit", (e) => {
         email: email.value,
         phone: phone.value,
     };
+
     const xhr = new XMLHttpRequest();
     xhr.open("POST", "/");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.onload = () => {
-        if (xhr.status === 200 && (male.checked === true || female.checked === true)) {
+        if ([xhr.status === 200 && male.checked] ||[xhr.status === 200 && female.checked]) {
             myForm.style.display = "none";
             container.innerHTML =
                 "Your submission is well received. Thank you!";
@@ -37,6 +38,7 @@ mySubmit.addEventListener("submit", (e) => {
             container.style.width = "50%";
             container.style.padding = "20px";
             container.style.color = "green";
+            xhr.send(JSON.stringify(formData));
         } else {
             setTimeout(() => {
                 myForm.innerHTML = "oops! please, fill in all necessary blocks";
@@ -45,7 +47,8 @@ mySubmit.addEventListener("submit", (e) => {
                 myForm.style.width = "100%";
             }, 1000);
             myForm.style.display = "block";
+            
         }
-    };
-    xhr.send(JSON.stringify(formData));
+    }
+
 });

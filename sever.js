@@ -38,7 +38,7 @@ app.post('/', (req, res)=>{
         text: `${mycomment}. These are my details viz: \n Phone no: ${phone}\n Address: ${address}\n Email: ${email}\n Country:${country}\n Gender: Male/${male},Female/${female} `
     }
     transporter.sendMail(mailOptions, (err, info)=>{
-        if(err){
+        if(err || (male === undefined && female === undefined)){
             console.log('error has occurred!')
         }else{
             console.log('Mail was sent: '+ info.response)
