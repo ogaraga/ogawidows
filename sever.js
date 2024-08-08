@@ -35,8 +35,8 @@ app.post('/', (req, res)=>{
         }
     })
     const mailOptions = {
-        from: email,
-        to: 'raymond.ogaraga@gmail.com',
+        from: process.env.USER,
+        to: email,
         subject: `A message from ${statuz}. ${myName} at ${time}.`,
         text: `${mycomment}. These are my details viz: \n Phone no: ${phone}\n Address: ${address}\n Email: ${email}\n Country:${country}\n Gender: Male/${male},Female/${female} `
     }
