@@ -5,10 +5,10 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(express.static('CONTACT'))
+app.use(express.static('https://ogawidows.vercel.app/CONTACT/cont.html'))
 //get the form
 app.get('/',(req, res)=>{
-    res.sendFile(__dirname + '/CONTACT/cont.html')
+    res.sendFile(__dirname + 'https://ogawidows.vercel.app/CONTACT/cont.html')
 });
 //post the form
 app.post('/', (req, res)=>{
