@@ -1,14 +1,16 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-app.use(express.static('https://ogawidows.vercel.app/CONTACT/cont.html'))
+app.use(express.static('CONTACT'))
 //get the form
 app.get('/',(req, res)=>{
-    res.sendFile(__dirname + 'https://ogawidows.vercel.app/CONTACT/cont.html')
+    res.sendFile(__dirname + '/CONTACT/cont.html')
 });
 //post the form
 app.post('/', (req, res)=>{
@@ -28,8 +30,8 @@ app.post('/', (req, res)=>{
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth:{
-            user:'raymond.ogaraga@gmail.com',
-            pass:'qxfvfqwklfieagvf'
+            user:process.env.USER,
+            pass:process.env.PASS_WORD
         }
     })
     const mailOptions = {
@@ -50,4 +52,4 @@ app.post('/', (req, res)=>{
         console.log(error.message)
     }
 });
-app.listen(5500, ()=>console.log('Server running @ port 5500!'));
+app.listen(PORT, ()=>console.log(`Server running on port ${PORT}!`));

@@ -28,9 +28,10 @@ mySubmit.addEventListener("submit", (e) => {
         };
 
         const xhr = new XMLHttpRequest();
-        xhr.open("POST", "https://ogawidows.vercel.app/CONTACT/cont.html");
+        xhr.open("POST", "/");
         xhr.setRequestHeader("content-type", "application/json");
         xhr.onload = () => {
+            console.log(xhr.status);
             if (xhr.status === 200 && [male.checked || female.checked]) {
                 myForm.style.display = "none";
                 container.innerHTML =
