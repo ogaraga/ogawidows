@@ -46,7 +46,7 @@ app.post('/', (req, res)=>{
         }else{
             console.log('Mail was sent: '+ info.response)
         }
-    })
+    });
     
     } catch (error) {
         console.log(error.message)
