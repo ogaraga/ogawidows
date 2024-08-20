@@ -15,7 +15,7 @@ app.get('/',(req, res)=>{
     res.sendFile(__dirname + '/CONTACT/cont.html')
 });
 //post the form
-app.post('/CONTACT/cont2.html', (req, res)=>{
+app.post('/send_message', (req, res)=>{
          
     const myName = req.body.myName;
     const email = req.body.email;
