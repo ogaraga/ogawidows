@@ -35,9 +35,9 @@
     <div class="form-container" id="form__container">
       <!-- Form box/ wrapper -->
 
-      <form class="submited" method="post" id="form__wrapper">
+      <form action="/send_mail" class="submited" method="post" id="form__wrapper">
         <label for="prefix">Prefix</label><br />
-        <select style="margin-bottom: 5px" name="prefix" id="prefix" required>
+        <select style="margin-bottom: 5px" name="statuz" id="prefix" required>
           <option disabled selected value="Select Your Status">
             Select Your Status
           </option>
@@ -57,7 +57,7 @@
         <label for="name"> Full Name</label><br />
         <input
           type="text"
-          name="full name"
+          name="myName"
           id="fullname"
           placeholder="Enter Your Name"
           required
@@ -94,7 +94,7 @@
         <label for="contact time">Best time to reach you?</label><br />
         <input type="time" name="time" id="time" required /> <br />
         <label for="name">Country</label><br />
-        <!-- Few selected countries -->
+        <!--Few selected countries -->
         <select style="margin-bottom: 10px" id="selected">
           <option disabled selected value="country">
             Select Your Continent/Country
@@ -143,7 +143,7 @@
           ></span>
         </label>
         <br />
-        <textarea name="" id="messages" cols="30" rows="10"></textarea><br />
+        <textarea name="message" id="messages" cols="30" rows="10"></textarea><br />
         <button type="reset" id="reset">Reset</button>
         <button type="submit" id="submit">Submit</button>
       </form>

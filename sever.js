@@ -1,26 +1,28 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
+const cors = require('cors')
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+app.use(cors());
 app.use(express.static('CONTACT'))
 //get the form
 app.get('/',(req, res)=>{
     res.sendFile(__dirname + '/CONTACT/cont.html')
 });
 //post the form
-app.post('/', (req, res)=>{
-    try {        
+app.post('/send_mail', (req, res)=>{
+         
     const myName = req.body.myName;
     const email = req.body.email;
     const phone = req.body.phone;
     const time = req.body.time;
     const statuz = req.body.statuz;
-    const mycomment = req.body.mycomment;
+    const mycomment = req.body.message;
     const male = req.body.male;
     const female = req.body.female;
     const country = req.body.country;
@@ -41,15 +43,15 @@ app.post('/', (req, res)=>{
         text: `${mycomment}. These are my details viz: \n Phone no: ${phone}\n Address: ${address}\n Email: ${email}\n Country:${country}\n Gender: Male/${male},Female/${female} `
     }
     transporter.sendMail(mailOptions, (err, info)=>{
-        if(err || (male === undefined && female === undefined)){
-            console.log('error has occurred!')
+        if(err){
+            console.log('Error has occurred sending the message')
         }else{
-            console.log('Mail was sent: '+ info.response)
+            res.sendFile(__dirname + '/CONTACT/cont2.html')
         }
-    });
+        
+    console.log(info)
+    })
+       
     
-    } catch (error) {
-        console.log(error.message)
-    }
-});
+    });
 app.listen(PORT, ()=>console.log(`Server running on port ${PORT}!`));
